@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ECHO | Water &amp; ESG Solutions</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-fixed": "#b2ebff",
+              "secondary": "#00696c",
+              "inverse-primary": "#8bd1e8",
+              "on-error-container": "#93000a",
+              "on-primary-fixed": "#001f27",
+              "on-secondary-fixed": "#002021",
+              "surface-variant": "#dee3e5",
+              "tertiary-container": "#437f6d",
+              "secondary-container": "#86f0f3",
+              "on-secondary": "#ffffff",
+              "on-primary-fixed-variant": "#004e5f",
+              "on-tertiary-fixed-variant": "#0b5040",
+              "surface": "#f5fafc",
+              "on-primary-container": "#fafdff",
+              "surface-container-lowest": "#ffffff",
+              "surface-bright": "#f5fafc",
+              "tertiary": "#286655",
+              "outline": "#717786",
+              "error-container": "#ffdad6",
+              "inverse-on-surface": "#ecf2f4",
+              "on-error": "#ffffff",
+              "background": "#f5fafc",
+              "secondary-fixed": "#89f3f6",
+              "on-surface": "#171c1e",
+              "error": "#ba1a1a",
+              "primary-container": "#347d92",
+              "secondary-fixed-dim": "#6bd7da",
+              "outline-variant": "#c1c6d7",
+              "surface-dim": "#d6dbdd",
+              "on-secondary-fixed-variant": "#004f51",
+              "surface-container-highest": "#dee3e5",
+              "on-background": "#171c1e",
+              "surface-container": "#eaeff1",
+              "on-tertiary-container": "#f5fff9",
+              "primary": "#0e6479",
+              "on-primary": "#ffffff",
+              "on-surface-variant": "#414754",
+              "surface-tint": "#13677b",
+              "on-secondary-container": "#006e70",
+              "surface-container-high": "#e4e9eb",
+              "on-tertiary": "#ffffff",
+              "tertiary-fixed-dim": "#95d3be",
+              "inverse-surface": "#2c3133",
+              "tertiary-fixed": "#b0efda",
+              "surface-container-low": "#eff4f6",
+              "primary-fixed-dim": "#8bd1e8",
+              "on-tertiary-fixed": "#002018"
+            },
+            fontFamily: {
+              "headline": ["Manrope", "sans-serif"],
+              "body": ["Manrope", "sans-serif"],
+              "label": ["Manrope", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl shadow-[0_10px_30px_rgba(14,100,121,0.08)]">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20">
+<a href="ECHO_Landing.html" class="text-2xl font-black text-cyan-800 tracking-tighter">ECHO</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-manrope text-sm font-semibold tracking-tight text-slate-600 hover:text-cyan-700 transition-colors" href="ECHO_Landing.html">Home</a>
+<a class="font-manrope text-sm font-semibold tracking-tight text-cyan-600 border-b-2 border-cyan-600 pb-1" href="Water_ESG.html">Programs</a>
+<a class="font-manrope text-sm font-semibold tracking-tight text-slate-600 hover:text-cyan-700 transition-colors" href="CSR_Community.html">ESG Impact</a>
+<a class="font-manrope text-sm font-semibold tracking-tight text-slate-600 hover:text-cyan-700 transition-colors" href="ECHO_Landing.html#about-section">About Us</a>
+<a class="font-manrope text-sm font-semibold tracking-tight text-slate-600 hover:text-cyan-700 transition-colors" href="ECHO_Landing.html#contact-section">Contact</a>
+</div>
+<button id="mobile-menu-btn" class="md:hidden p-2 text-primary">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+<a href="ECHO_Landing.html#contact-section" class="hidden md:inline-block bg-primary text-on-primary px-6 py-2.5 rounded-full font-semibold text-sm hover:bg-primary-container transition-all active:scale-95 duration-200">
+                Get Started
+            </a>
+</div>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-white/95 backdrop-blur-xl shadow-xl border-t border-slate-200">
+<div class="flex flex-col px-8 py-6 gap-4 font-manrope text-sm font-semibold">
+<a class="text-slate-600 hover:text-cyan-700 py-2" href="ECHO_Landing.html">Home</a>
+<a class="text-cyan-600 py-2" href="Water_ESG.html">Programs</a>
+<a class="text-slate-600 hover:text-cyan-700 py-2" href="CSR_Community.html">ESG Impact</a>
+<a class="text-slate-600 hover:text-cyan-700 py-2" href="ECHO_Landing.html#about-section">About Us</a>
+<a class="text-slate-600 hover:text-cyan-700 py-2" href="ECHO_Landing.html#contact-section">Contact</a>
+<a href="ECHO_Landing.html#contact-section" class="bg-primary text-on-primary px-6 py-3 rounded-full font-bold text-center mt-2">Get Started</a>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/80 to-transparent z-10"></div>
+<img class="w-full h-full object-cover" data-alt="Abstract aerial view of clean turquoise water ripples" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbbH_2b2wo0S2B05iKW8u5hkKMzivaAh_0XmSKUsPBNlasAAUD9MeVxxQUIOwlZ9AXub0N0QykOJaTK1x211bI1OHfThd5i4wboNbkzA3m2fxpU98I5Kq4ZVMIHR64lMKaq9-UM2DNh6GzuH2W8pNUnxKlBcWmlgGbD-pc5FLFZnlaVFxt40rxBu4pWjJTCq_Ada7Qtq1qFoMFB71kbmSqYQ8bzTdWJ_TgpopjDL1Ze4_L4q4Azth0tMmu9A2qLSf09tHSBD7ivNQ"/>
+</div>
+<div class="relative z-20 max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7">
+<span class="inline-block px-4 py-1.5 bg-secondary-container text-on-secondary-container rounded-full text-xs font-bold tracking-widest uppercase mb-6">Aquatic Stewardship</span>
+<h1 class="text-6xl md:text-8xl font-black text-primary tracking-tighter leading-[0.9] mb-8">
+                        Water is the <br/>
+<span class="text-secondary">Lifeblood</span> of Nature
+                    </h1>
+<p class="text-xl text-on-surface-variant max-w-xl leading-relaxed mb-10">
+                        ECHO redefines ecological governance through precision water conservation. We bridge the gap between corporate responsibility and planetary hydration.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<a href="#esg-framework" class="bg-primary text-on-primary px-8 py-4 rounded-lg font-bold hover:shadow-lg transition-all flex items-center gap-2 inline-flex">
+                            Explore Programs <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+<a href="CSR_Community.html" class="glass-card text-primary px-8 py-4 rounded-lg font-bold border border-primary/10 hover:bg-white transition-all inline-block">
+                            View ESG Report
+                        </a>
+</div>
+</div>
+</div>
+</section>
+<!-- ESG Framework Section: Bento Grid -->
+<section id="esg-framework" class="py-24 max-w-7xl mx-auto px-8">
+<div class="mb-16">
+<h2 class="text-4xl font-black text-primary tracking-tight mb-4">ESG Impact Framework</h2>
+<p class="text-on-surface-variant max-w-2xl">A data-driven approach to environmental sustainability, social equity, and transparent governance.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+<!-- Environment Card -->
+<div class="md:col-span-2 lg:col-span-2 bg-primary-container p-8 rounded-xl text-on-primary-container flex flex-col justify-between min-h-[320px]">
+<div>
+<span class="material-symbols-outlined text-4xl mb-4" style="font-variation-settings: 'FILL' 1;">eco</span>
+<h3 class="text-3xl font-bold mb-2">Environmental</h3>
+<p class="opacity-80">Hyper-local water restoration and biodiversity enhancement protocols designed for zero-waste ecosystems.</p>
+</div>
+<div class="flex gap-4 mt-8">
+<div class="bg-white/10 px-4 py-2 rounded-full text-sm font-semibold backdrop-blur-sm">84% Reduction</div>
+<div class="bg-white/10 px-4 py-2 rounded-full text-sm font-semibold backdrop-blur-sm">Net Zero</div>
+</div>
+</div>
+<!-- Social Card -->
+<div class="bg-surface-container-high p-8 rounded-xl flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-3xl text-secondary mb-4">groups</span>
+<h3 class="text-xl font-bold text-on-surface mb-2">Social</h3>
+<p class="text-sm text-on-surface-variant">Community-led aquatic governance ensuring equitable access to resources.</p>
+</div>
+<a class="text-primary font-bold text-sm flex items-center gap-1 group" href="#">
+                        Metrics <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">north_east</span>
+</a>
+</div>
+<!-- Governance Card -->
+<div class="bg-secondary p-8 rounded-xl text-on-secondary flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-3xl mb-4">verified_user</span>
+<h3 class="text-xl font-bold mb-2">Governance</h3>
+<p class="text-sm opacity-80">Blockchain-verified water audits and transparent impact reporting.</p>
+</div>
+<div class="h-1 w-full bg-white/20 rounded-full overflow-hidden">
+<div class="h-full bg-secondary-container w-3/4"></div>
+</div>
+</div>
+<!-- Visual Data Component -->
+<div class="md:col-span-3 lg:col-span-4 bg-surface-container-low p-8 rounded-xl border border-outline-variant/20">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+<div class="max-w-md">
+<h3 class="text-2xl font-bold text-primary mb-2">Predictive Conservation</h3>
+<p class="text-on-surface-variant">Our AI models predict regional water scarcity 18 months in advance, allowing for proactive ecosystem fortification.</p>
+</div>
+<div class="flex gap-8 items-end flex-1 justify-end w-full">
+<div class="flex flex-col items-center gap-2">
+<div class="w-12 h-32 bg-primary/20 rounded-t-full relative overflow-hidden">
+<div class="absolute bottom-0 w-full h-3/4 bg-primary rounded-t-full"></div>
+</div>
+<span class="text-[10px] font-bold uppercase tracking-widest text-outline">Q1</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-12 h-40 bg-primary/20 rounded-t-full relative overflow-hidden">
+<div class="absolute bottom-0 w-full h-1/2 bg-primary rounded-t-full"></div>
+</div>
+<span class="text-[10px] font-bold uppercase tracking-widest text-outline">Q2</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-12 h-24 bg-primary/20 rounded-t-full relative overflow-hidden">
+<div class="absolute bottom-0 w-full h-[90%] bg-primary rounded-t-full"></div>
+</div>
+<span class="text-[10px] font-bold uppercase tracking-widest text-outline">Q3</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-12 h-48 bg-secondary-container/50 rounded-t-full relative overflow-hidden">
+<div class="absolute bottom-0 w-full h-full bg-secondary rounded-t-full"></div>
+</div>
+<span class="text-[10px] font-bold uppercase tracking-widest text-outline">Q4</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Water Conservation Solutions: Asymmetric Layout -->
+<section class="py-24 bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div class="relative">
+<div class="absolute -top-10 -left-10 w-40 h-40 bg-secondary-container/30 rounded-full blur-3xl"></div>
+<div class="relative z-10 rounded-xl overflow-hidden aspect-square shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="Modern geometric architectural water feature in a garden" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEtxWjvv-1GWl6IHiDG2vUnCNt1-x592BIHLVYzjh-emQIZhcki2lMKWi-9ZSIK_VIGxLymk-fcdKCAtcHEQTY0Q1oM8TCht16zDZu0jSM3pa4QDwaVqleWzVfmrmpPWYzO6ItcIOPT5LBuoZLlHIxyKa6-2Korsprgtqval5_kqGTOSpUkmnKjg6uvZZfKKh36MQN7g_0W16yhfefBch9uSnH4R2mTSJZ59-vHmRFVkIcDm9LggOcy-eeI4_bMPeICvvGRSdf-2o"/>
+</div>
+<div class="absolute -bottom-6 -right-6 glass-card p-6 rounded-lg shadow-xl border border-white/40 max-w-xs">
+<p class="text-sm font-bold text-primary mb-1">Impact Highlight</p>
+<p class="text-xs text-on-surface-variant leading-relaxed">Rainwater harvesting implementation across 14 European centers saved 2.4M liters in 2023.</p>
+</div>
+</div>
+<div>
+<h2 class="text-4xl md:text-5xl font-black text-primary tracking-tighter mb-8 leading-tight">
+                            Rainwater Harvesting &amp; <br/>
+<span class="text-secondary">Structured Recovery</span>
+</h2>
+<div class="space-y-8">
+<div class="flex gap-6 group">
+<div class="flex-shrink-0 w-12 h-12 bg-surface-container-high rounded-full flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-all">
+<span class="material-symbols-outlined">water_drop</span>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-2">Micro-Catchment Systems</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Decentralized water collection that integrates seamlessly into existing corporate infrastructure without major renovations.</p>
+</div>
+</div>
+<div class="flex gap-6 group">
+<div class="flex-shrink-0 w-12 h-12 bg-surface-container-high rounded-full flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-all">
+<span class="material-symbols-outlined">filter_alt</span>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-2">Gray-Water Purification</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Closed-loop filtration cycles that repurpose non-potable water for irrigation and industrial cooling.</p>
+</div>
+</div>
+<div class="flex gap-6 group">
+<div class="flex-shrink-0 w-12 h-12 bg-surface-container-high rounded-full flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-all">
+<span class="material-symbols-outlined">monitoring</span>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-2">IoT Flow Analytics</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Real-time leak detection and usage optimization using sub-metering sensor technology.</p>
+</div>
+</div>
+</div>
+<button class="mt-12 text-secondary font-black text-sm tracking-widest uppercase flex items-center gap-2 hover:gap-4 transition-all">
+                            Explore Technical Specs <span class="material-symbols-outlined">arrow_right_alt</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Section -->
+<section class="py-24 max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="text-center">
+<p class="text-5xl font-black text-primary mb-2">12B</p>
+<p class="text-xs uppercase tracking-widest font-bold text-outline">Liters Conserved</p>
+</div>
+<div class="text-center">
+<p class="text-5xl font-black text-secondary mb-2">420+</p>
+<p class="text-xs uppercase tracking-widest font-bold text-outline">Corporate Sites</p>
+</div>
+<div class="text-center">
+<p class="text-5xl font-black text-tertiary mb-2">98%</p>
+<p class="text-xs uppercase tracking-widest font-bold text-outline">Efficiency Gain</p>
+</div>
+<div class="text-center">
+<p class="text-5xl font-black text-primary mb-2">24/7</p>
+<p class="text-xs uppercase tracking-widest font-bold text-outline">Global Monitoring</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-t-[3rem] mt-20 bg-slate-100">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto px-8 py-16">
+<div class="col-span-1 md:col-span-1">
+<a href="ECHO_Landing.html" class="text-xl font-bold text-cyan-900 mb-6 block">ECHO</a>
+<p class="font-manrope text-sm leading-relaxed text-slate-500 mb-6">Pioneering the next wave of ecological transparency and fluid governance for global enterprises.</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-cyan-800 hover:scale-110 transition-transform cursor-pointer">public</span>
+<span class="material-symbols-outlined text-cyan-800 hover:scale-110 transition-transform cursor-pointer">hub</span>
+<span class="material-symbols-outlined text-cyan-800 hover:scale-110 transition-transform cursor-pointer">waves</span>
+</div>
+</div>
+<div>
+<h4 class="font-bold text-cyan-800 mb-6 uppercase text-xs tracking-widest">Solutions</h4>
+<ul class="space-y-4">
+<li><a class="font-manrope text-sm text-slate-500 hover:text-cyan-600 hover:underline decoration-cyan-500/30 underline-offset-4 transition-all" href="Water_ESG.html">Wellness</a></li>
+<li><a class="font-manrope text-sm text-slate-500 hover:text-cyan-600 hover:underline decoration-cyan-500/30 underline-offset-4 transition-all" href="Water_ESG.html">Water</a></li>
+<li><a class="font-manrope text-sm text-slate-500 hover:text-cyan-600 hover:underline decoration-cyan-500/30 underline-offset-4 transition-all" href="Water_ESG.html">Waste</a></li>
+<li><a class="font-manrope text-sm text-slate-500 hover:text-cyan-600 hover:underline decoration-cyan-500/30 underline-offset-4 transition-all" href="Water_ESG.html">Energy</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-cyan-800 mb-6 uppercase text-xs tracking-widest">Legal</h4>
+<ul class="space-y-4">
+<li><a class="font-manrope text-sm text-slate-500 hover:text-cyan-600 hover:underline decoration-cyan-500/30 underline-offset-4 transition-all" href="#">Privacy Policy</a></li>
+<li><a class="font-manrope text-sm text-slate-500 hover:text-cyan-600 hover:underline decoration-cyan-500/30 underline-offset-4 transition-all" href="#">Terms of Service</a></li>
+<li><a class="font-manrope text-sm text-slate-500 hover:text-cyan-600 hover:underline decoration-cyan-500/30 underline-offset-4 transition-all" href="#">Cookie Policy</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-cyan-800 mb-6 uppercase text-xs tracking-widest">Newsletter</h4>
+<div class="bg-white p-2 rounded-full border border-slate-200 flex items-center pr-4">
+<input class="bg-transparent border-none focus:ring-0 text-sm w-full pl-4 font-manrope" placeholder="Your email" type="email"/>
+<button class="bg-cyan-800 text-white p-2 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-sm">send</span>
+</button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 py-8 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-manrope text-sm text-slate-500">© 2024 ECHO by Ecolive. All rights reserved.</p>
+<div class="flex gap-6">
+<span class="text-xs font-bold text-cyan-800">ISO 14001</span>
+<span class="text-xs font-bold text-cyan-800">B-CORP</span>
+</div>
+</div>
+</footer>
+<script>
+const mobileBtn = document.getElementById('mobile-menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+mobileBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+    mobileBtn.querySelector('.material-symbols-outlined').textContent = mobileMenu.classList.contains('hidden') ? 'menu' : 'close';
+});
+mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => { mobileMenu.classList.add('hidden'); mobileBtn.querySelector('.material-symbols-outlined').textContent = 'menu'; });
+});
+window.addEventListener('scroll', () => {
+    document.querySelector('nav').classList.toggle('shadow-xl', window.scrollY > 50);
+});
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('opacity-100', 'translate-y-0'); e.target.classList.remove('opacity-0', 'translate-y-8'); }});
+}, { threshold: 0.1 });
+document.querySelectorAll('section').forEach(s => { s.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-8'); observer.observe(s); });
+</script>
+</body></html>
