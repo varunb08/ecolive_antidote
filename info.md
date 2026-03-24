@@ -123,7 +123,7 @@ Ecolive's water-focused social enterprise dedicated to conservation. The platfor
 | Phone     | +91 9871472211                                                 |
 | Email     | [email protected]                                              |
 | Gurugram  | 438, Vipul Trade Center, Sohna Road, Gurugram                  |
-| Jaipur    | 156, Anand Nagar, Sirsi Road, Vaishali Nagar, Jaipur - 302012 |
+| Jaipur    | Ecolive Ventures Pvt Ltd, 286, Rajendra Prasad Nagar A, 200 feet bye-pass, Near Ajmer Road, Jaipur - 302020 |
 
 ---
 
